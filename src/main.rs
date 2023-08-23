@@ -41,6 +41,10 @@ fn iterators() {
             println!("Found no index for {find_number}");
         }
     }
+
+
+    let sum: u16 = numbers.iter().sum();
+    println!("Sum of numbers {numbers:?} is {sum}");
 }
 
 fn main() {
