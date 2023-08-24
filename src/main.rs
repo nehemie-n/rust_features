@@ -1,7 +1,6 @@
-mod sum_product_types;
+mod polymorphism;
 
-use sum_product_types::simulate;
-
+use polymorphism::simulate;
 fn main() {
     // Using iterators
     // iterators()
