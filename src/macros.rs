@@ -6,13 +6,13 @@ macro_rules! greet {
 }
 
 macro_rules! vectorize {
-    ($size: expr) => {{
+    ($size: expr, $type: ty) => {{
         use rand::Rng;
         let mut rng = rand::thread_rng();
 
         let mut numbers = Vec::new();
         for _ in 0..$size {
-            numbers.push(rng.gen::<u8>());
+            numbers.push(rng.gen::<$type>());
         }
         numbers
     }};
